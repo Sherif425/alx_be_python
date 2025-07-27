@@ -34,7 +34,7 @@ def main():
     display_current_datetime()
     
     try:
-        days_ahead = int(input("Enter the number of days to see the future date: "))
+        days_ahead = int(input("Enter the number of days to add to the current date: "))
         calculate_future_date(days_ahead)
     except ValueError as e:
         print(f"Error: {e}. Please enter a valid integer for days.")
