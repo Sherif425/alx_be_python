@@ -5,7 +5,7 @@ class Book:
         self.author = author
         self._is_checked_out = _is_checked_out
 
-    def is_checked_out(self):
+    def checked_out(self):
         """Return whether the book is checked out."""
         return self._is_checked_out 
     
@@ -15,7 +15,7 @@ class Library:
     def __init__(self, _books):
         """Initialize an empty library."""
         self._books = _books
-        
+
 
     def add_book(self, book):
         """Add a book to the library."""
